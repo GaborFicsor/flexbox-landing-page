@@ -20,18 +20,20 @@ body {
 
 .header {
     background-color: var(--dark-bg-color);
-    color: var(--main-text-color)
+    color: var(--main-text-color);
 }
 
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    margin-right: auto;
 }
 
 .links > ul {
@@ -42,5 +44,58 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* hero section */
+
+.hero {
+    background-color: var(--dark-bg-color);
+    color: var(--main-text-color);
+    padding: 75px 0;
+}
+
+.hero-container {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.hero-content-1 {
+    flex: 1;
+}
+
+.hero-content-1 > h2 {
+    font-size: 48px;
+    color: var(--main-text-color);
+    margin: 0;
+}
+
+.hero-content-1 > p {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+
+.hero-content-2 {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    background-color: #6C747D;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    padding: 8px 30px;
+    border: 0px;
+    border-radius: 7px;
+    font-size: 18px;
 }
