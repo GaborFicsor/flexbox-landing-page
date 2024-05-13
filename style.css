@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --dark-bg-color: #1F2937;
     --header-logo: #F9FAF8;
@@ -7,4 +9,38 @@
     --information-header-text-color: #1F2937;
     --quote-section-bg-color: #E5E7EB;
     --quote-text-color: #1F2937;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background-color: var(--dark-bg-color);
+    color: var(--main-text-color)
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links > ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color)
 }
