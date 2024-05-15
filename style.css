@@ -11,8 +11,13 @@
     --quote-text-color: #1F2937;
 }
 
-body {
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -21,6 +26,7 @@ body {
 .header {
     background-color: var(--dark-bg-color);
     color: var(--main-text-color);
+    padding: 10px 0;
 }
 
 .navigation {
@@ -91,10 +97,10 @@ a {
     color: var(--secondary-text-color);
 }
 
-button {
+.hero-content-1 > button {
     background-color: var(--button-color);
     color: var(--main-text-color);
-    padding: 8px 30px;
+    padding: 5px 30px;
     border: 0px;
     border-radius: 7px;
     font-size: 18px;
@@ -113,6 +119,7 @@ button {
     text-align: center;
     font-size: 36px;
     font-weight: 500;
+    padding: 40px 0;
 }
 
 .info-container {
@@ -167,4 +174,47 @@ button {
     align-self: flex-end;
     margin-right: 125px;
     font-size: 25px;
+}
+
+/* call to action */
+
+.cta-container {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    padding: 40px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.cta-container > div > p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.cta-container > button {
+    margin-left: auto;
+    border: 1px solid white;
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    align-self: center;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--dark-bg-color);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer > h3 {
+    font-weight: 200;
 }
